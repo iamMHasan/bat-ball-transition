@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:200px;
+            width: 200px;
+            background-color: orange;
+            transition: width 3s, height 3s ease-out, transform 3s;
+            margin-bottom: 4px;
+        }
+        .box:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+        }
+        .box1{
+            height:200px;
+            width: 200px;
+            background-color: orange;
+            transition: width 3s, height 3s linear;
+           
+        }
+        .box1:hover{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
